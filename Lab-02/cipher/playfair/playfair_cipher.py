@@ -16,7 +16,7 @@ class PlayFairCipher:
             matrix.append(letter)
             if len(matrix) == 25:
                 break
-            playfair_matrix = [matrix[i:i+5] for i in range(0,len(matrix),5)]
+        playfair_matrix = [matrix[i:i+5] for i in range(0,len(matrix),5)]
         return playfair_matrix
     
     def find_letter_coords(self,matrix,letter):
